@@ -1,0 +1,72 @@
+@colorLetras: #FFFFFF;
+body{
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
+    color: #FFFFFF;
+}
+.imgCabecera{
+    height:200px; 
+    width:300px;
+}
+.logo{
+    height:150px; 
+    width:150px;
+}
+.cabecera,.webs{
+    text-align: center;
+}
+.cuerpo{
+    border:solid 1px #000000;
+    -moz-border-radius-topleft: 11px;
+    -moz-border-radius-topright:11px;
+    -moz-border-radius-bottomleft:11px;
+    -moz-border-radius-bottomright:11px;
+    -webkit-border-top-left-radius:11px;
+    -webkit-border-top-right-radius:11px;
+    -webkit-border-bottom-left-radius:11px;
+    -webkit-border-bottom-right-radius:11px;
+    border-top-left-radius:11px;
+    border-top-right-radius:11px;
+    border-bottom-left-radius:11px;
+    border-bottom-right-radius:11px;
+    background-color: rgba(34, 34, 34, 0.8);
+}
+.carrusel{
+    height:400px;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    }
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 560px;
+        height: 315px;
+    }
+.foto{
+    height: 300px;
+    width: 200px;
+}
+@media (max-width: 560px) {
+  .videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    }
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .foto{
+        height: 300px;
+        width: 200px;
+    }
+}

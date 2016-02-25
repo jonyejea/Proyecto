@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Diamond Doges Airsoft Team</title>
+    <title>Contacta con nosotros-Diamond Doges Airsoft Team</title>
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,44 +31,66 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html">Diamond Doges</a>
+                  <a class="navbar-brand " href="index.html">Diamond Doges</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="airsoft.html">¿Que es el airsoft?<span class="sr-only">(current)</span></a></li>
-                    <li><a href="contacta.html">Contactanos</a></li>
+                    <li><a href="airsoft.html">¿Que es el airsoft?</a></li>
+                    <li class="active"><a href="contacta.html">Contactanos</a></li>
                     <li><a href="http://diamonddogesairsoft.foroactivo.com/">Foro</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
             </nav>
             </div>
-            <h3>¿Que es el airsoft?</h3>
+            
+            <h3>¿Estas interesado en el airsoft?</h3>
             
             <div class="row">
                 
               <div class="col-md-1"></div>
               <div class="col-md-11">
-                  <p>El airsoft es un juego y deporte de estrategia basado en la simulación militar. Se utilizan réplicas de armas de fuego —también llamadas ALD (arma lúdico-deportiva)—, que disparan pequeñas bolas de PLGA o biodegradables de 6 u 8 mm de diámetro. Los escenarios y el equipamiento son similares a los que se podrían encontrar en un combate real: los campos de batalla suelen tener muros, búnkeres, trincheras, torres, vehículos y otros elementos para aumentar el realismo. El término airsoft proviene del inglés y se podría traducir como «aire suave», haciendo referencia a la alta velocidad pero baja potencia a la que es disparada la munición.
+                  <p>Si estas interesado, tienes dudas o quieres unirte a nuestro equipo no dudes en contactar con nosotros.</p>
+                </div>
+            </div>
+            <form action="php/enviarcorreo.php" method="post" name="contacto" id ="contacto" >
 
-Las municiones son casi inofensivas, pero es obligatorio que todos los participantes y las personas que estén situadas dentro del área de tiro lleven gafas de protección para evitar lesiones oculares, puesto que es la zona del cuerpo más vulnerable. Si se respetan las normas, la probabilidad de sufrir un accidente es mínima.</p>
-                </div>
-            </div>
-            <h3>Reglas</h3>
-            
-            <div class="row">
-                
-              <div class="col-md-1"></div>
-              <div class="col-md-11">
-                  <div class="videoWrapper">
-                    <iframe class="video" src="https://www.youtube.com/embed/ec4Mb9jKNr8" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-            </div>
-             
-            
+                Nombre completo <input name="nombre" type="text" id="nombre completo"size="30" maxlength="100">
+                <br>
+                <br>
+                Correo electronico <input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" >
+                <br>
+                <br>
+                Población <input name="poblacion" type="text" onBlur="MM_validateForm('poblacion','','R');return document.MM_returnValue" size="20" maxlength="60">
+                <br>
+                <br>
+                Aficiones
+                <br>
+
+                <textarea cols="50" rows="5" name="comentarios"></textarea>
+                <br>
+                <br>
+                Que opina de nuestra pagina
+                <br>
+                <br>
+                <input type="radio" name="GrupoOpciones2" value="mucho" >me ha gustado mucho
+                <br>
+                <input type="radio" name="GrupoOpciones2" value="regular" >no esta mal
+                <br>
+                <input type="radio" name="GrupoOpciones2" value="mal" >no me ha gustado nada
+                <br>
+                <br>
+                Danos tu opinion
+                <br>
+                <textarea cols="50" rows="5" name="opinion"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Enviar formulario">
+                <input type="Reset" value="Borrar datos">
+
+            </form> 
             
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
