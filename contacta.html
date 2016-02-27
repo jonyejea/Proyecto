@@ -9,8 +9,10 @@
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-        
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet/less" type="text/css" href="css/estilo.less">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+    <script src="js/less.min.js"></script>    
     </div>
   </head>
   <body>
@@ -45,55 +47,42 @@
               </div><!-- /.container-fluid -->
             </nav>
             </div>
-            
-            <h3>¿Estas interesado en el airsoft?</h3>
-            
-            <div class="row">
-                
-              <div class="col-md-1"></div>
-              <div class="col-md-11">
-                  <p>Si estas interesado, tienes dudas o quieres unirte a nuestro equipo no dudes en contactar con nosotros.</p>
+        <div class="row cuerpo">
+              <div class="col-md-8">
+                  <h3>¿Estas interesado en el airsoft?</h3>
+                  <div class="row">
+                        
+                      <div class="col-md-2"></div>
+                      <div class="col-md-10">
+                          <p>Si estas interesado, tienes dudas o quieres unirte a nuestro equipo no dudes en contactar con nosotros.</p>
+                        </div>
+                    </div>
+                    <form id="formulario" method="post" action="php/enviarcorreo.php">
+                        Nombre completo:<input type="text" class="form-control" id="nombre" >
+                        <br>
+                        Correo electronico:<input id="correo" type="email" class="form-control">
+                        <br>
+                        Mensaje:
+                        <br>
+                        <textarea id="mensaje" class="form-control" rows="3"></textarea>
+                        <br>
+                        <label id="resultado"></label>
+                        <br/>
+                        <button id="enviar" type="button" class="btn btn-default">Enviar Formulario</button>
+                        <button id="reset" type="button" class="btn btn-default">Reset</button>
+                    </form>
+                        <br>
+                    <p>O tambien puedes contactar con nosotros a traves de <a href=""><i class="fa fa-facebook-square"></i> Facebook <i class="fa fa-facebook-square"></i></a> </p>
+
+                </div>
+                <div class="col-md-4 webs">
                 </div>
             </div>
-            <form action="php/enviarcorreo.php" method="post" name="contacto" id ="contacto" >
-
-                Nombre completo <input name="nombre" type="text" id="nombre completo"size="30" maxlength="100">
-                <br>
-                <br>
-                Correo electronico <input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" >
-                <br>
-                <br>
-                Población <input name="poblacion" type="text" onBlur="MM_validateForm('poblacion','','R');return document.MM_returnValue" size="20" maxlength="60">
-                <br>
-                <br>
-                Aficiones
-                <br>
-
-                <textarea cols="50" rows="5" name="comentarios"></textarea>
-                <br>
-                <br>
-                Que opina de nuestra pagina
-                <br>
-                <br>
-                <input type="radio" name="GrupoOpciones2" value="mucho" >me ha gustado mucho
-                <br>
-                <input type="radio" name="GrupoOpciones2" value="regular" >no esta mal
-                <br>
-                <input type="radio" name="GrupoOpciones2" value="mal" >no me ha gustado nada
-                <br>
-                <br>
-                Danos tu opinion
-                <br>
-                <textarea cols="50" rows="5" name="opinion"></textarea>
-                <br>
-                <br>
-                <input type="submit" value="Enviar formulario">
-                <input type="Reset" value="Borrar datos">
-
-            </form> 
+            
             
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
